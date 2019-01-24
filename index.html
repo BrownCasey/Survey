@@ -9,18 +9,33 @@
             background-color: rgb(225, 225, 225);
         }
         header {
-            height: 100px;
             background-color: rgb(175, 200, 245);
+            background-image: url('images/startup-594091_1920.jpg');
+            text-align: center;
+            color: rgb(225, 225, 225);
         }
-        header, section {
-            margin-left: 25%;
-            margin-right: 25%;
+        header, article {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        label {
+            display: block;
         }
         section {
             margin-bottom: 10px;
         }
         section:nth-child(2n) {
             background-color: rgb(200, 200, 245);
+        }
+        .left {
+            float: left;
+        }
+        .left:after {
+            clear: both;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr
         }
         @media screen and (max-width: 800px){
             header, section {
@@ -32,12 +47,12 @@
     </head>
     <body>
         <header>
-            <p>Member Wellness Survey</p>
-            <p>Or a flu quiz</p>
-            <p>With links to references</p>
+            <h1>Member Wellness Survey</h1>
+            <h2>Or a flu quiz</h2>
+            <h3>With links to references</h3>
         </header>
-        <article>
-            <section>
+        <article class="grid-container">
+            <section class="grid-box-1">
             <form action="">
                 <div class="input-container">
                     <label for="name">Name:</label>
@@ -66,10 +81,10 @@
                 <a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
                 <label>How many people got the flu in the 2016-2017 season?</label>
                 <div class="input-container">
-                    <label for="1M">
+                    <label for="1M" class="left">
                         <input type="radio" name="sick">1M
                     </label>
-                    <label for="5M">
+                    <label for="5M" class="left">
                         <input type="radio" name="sick">5M
                     </label>
                     <label for="30M">
@@ -78,10 +93,10 @@
                 </div>
                 <label>How many people had a medical visit related to flu that year?</label>
                 <div class="input-container">
-                    <label for="500K">
+                    <label for="500K" class="left">
                         <input type="radio" name="visit">500K
                     </label>
-                    <label for="2M">
+                    <label for="2M" class="left">
                         <input type="radio" name="visit">2M
                     </label>
                     <label for="14M">
@@ -90,10 +105,10 @@
                 </div>
                 <label>Which are symptoms of flu?</label>
                 <div class="input-container">
-                    <label for="fever">
+                    <label for="fever" class="left">
                         <input type="checkbox" name="symptom">Fever
                     </label>
-                    <label for="aches">
+                    <label for="aches" class="left">
                         <input type="checkbox" name="symptom">Aches
                     </label>
                     <label for="chill">
@@ -103,17 +118,8 @@
                 <input type="submit" value="Submit"></input>
             </form>
             </section>
-            <section>
+            <section class="grid-box-2">
                 <p>The Hitchhiker's Guide to the Galaxy</p>
-            </section>
-            <section>
-                <p>The Restaurant at the End of the Universe</p>
-            </section>
-            <section>
-                <p>Life, The Universe and Everything</p>
-            </section>
-            <section>
-                <p>So Long, and Thanks for All the Fish</p>
             </section>
         </article>
         <footer>
