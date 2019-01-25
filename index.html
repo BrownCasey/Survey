@@ -13,6 +13,8 @@
             background-image: url('images/startup-594091_1920.jpg');
             text-align: center;
             color: rgb(225, 225, 225);
+            min-height: 300px;
+            background-size: 100%;
         }
         header, article {
             margin-left: 10%;
@@ -21,11 +23,24 @@
         label {
             display: block;
         }
+        li {
+            line-height: 2;
+        }
+        ul {
+            list-style: none;
+            padding-inline-start: 0px;
+        }
         section {
             margin-bottom: 10px;
+            padding: 0px 5px 0px 5px;
         }
         section:nth-child(2n) {
             background-color: rgb(200, 200, 245);
+        }
+        .input-container {
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 10px;
+            margin: 3px 0px 5px 0px;
         }
         .left {
             float: left;
@@ -53,6 +68,7 @@
         </header>
         <article class="grid-container">
             <section class="grid-box-1">
+            <h2>Week 5 Quiz</h2>
             <form action="">
                 <div class="input-container">
                     <label for="name">Name:</label>
@@ -78,9 +94,8 @@
                     <label for="sleep">Hours Slept per day:</label>
                     <input type="number" id="sleep"></input>
                 </div>
-                <a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
-                <label>How many people got the flu in the 2016-2017 season?</label>
                 <div class="input-container">
+                <label>How many people got the flu in the 2016-2017 season?</label>
                     <label for="1M" class="left">
                         <input type="radio" name="sick">1M
                     </label>
@@ -91,8 +106,8 @@
                         <input type="radio" name="sick">30M
                     </label>
                 </div>
-                <label>How many people had a medical visit related to flu that year?</label>
                 <div class="input-container">
+                <label>How many people had a medical visit related to flu that year?</label>
                     <label for="500K" class="left">
                         <input type="radio" name="visit">500K
                     </label>
@@ -103,8 +118,8 @@
                         <input type="radio" name="visit">14M
                     </label>
                 </div>
-                <label>Which are symptoms of flu?</label>
                 <div class="input-container">
+                <label>Which are symptoms of flu?</label>
                     <label for="fever" class="left">
                         <input type="checkbox" name="symptom">Fever
                     </label>
@@ -119,7 +134,17 @@
             </form>
             </section>
             <section class="grid-box-2">
-                <p>The Hitchhiker's Guide to the Galaxy</p>
+                <h2>Reading List</h2>
+                <ul>
+                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    </li>
+                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    </li>
+                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    </li>
+                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    </li>
+                </ul>
             </section>
         </article>
         <footer>
