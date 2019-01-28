@@ -53,6 +53,10 @@
         section:nth-child(2n) {
             <!--background-color: rgb(200, 200, 245);-->
         }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr
+        }
         .input-container {<!--
             border: 1px solid rgb(200, 200, 200);
             border-radius: 10px;-->
@@ -63,10 +67,6 @@
         }
         .left:after {
             clear: both;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 2fr 1fr
         }
         @media screen and (max-width: 800px){
             header, section {
@@ -150,17 +150,19 @@
             </form>
             </section>
             <section class="grid-box-2">
-                <h2>More Resources</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in volutpat nisi, a interdum sem. Phasellus est odio, fermentum in turpis at, ultrices feugiat magna. Praesent vel nisl in odio.</p>
+                <h2>Summary</h2>
+                <cite>Seasonal influenza is characterized by a sudden onset of fever, cough (usually dry), headache, muscle and joint pain, severe malaise (feeling unwell), sore throat and a runny nose. The cough can be severe and can last 2 or more weeks. Most people recover from fever and other symptoms within a week without requiring medical attention. But influenza can cause severe illness or death especially in people at high risk.</cite><span> - "Influenza (Seasonal)." <i>WHO,</i> 6 Nov. 2018</span>
+                <p>https://www.who.int/en/news-room/fact-sheets/detail/influenza-(seasonal)
+                </p>
                 <h2>Reading List</h2>
                 <ul>
-                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">Burden of Disease - CDC</a>
                     </li>
-                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    <li><a href="https://www.cdc.gov/flu/about/disease/high_risk.htm">People at High Risk - CDC</a>
                     </li>
-                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    <li><a href="https://www.who.int/influenza/surveillance_monitoring/bod/en/">Burden of Disease - WHO</a>
                     </li>
-                    <li><a href="https://www.cdc.gov/flu/about/burden/past-seasons.html">www.CDC.gov</a>
+                    <li><a href="https://www.who.int/en/news-room/fact-sheets/detail/influenza-(seasonal)">Fact Sheet - WHO</a>
                     </li>
                 </ul>
             </section>
