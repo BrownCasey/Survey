@@ -53,6 +53,10 @@
         section:nth-child(2n) {
             <!--background-color: rgb(200, 200, 245);-->
         }
+        .center {
+            margin: auto;
+            text-align: center;
+        }
         .grid-container {
             display: grid;
             grid-template-columns: 2fr 1fr
@@ -66,6 +70,15 @@
             float: left;
         }
         .left:after {
+            clear: both;
+        }
+        .no-space {
+            margin: 0;
+        }
+        .right {
+            float: right;
+        }
+        .right:after {
             clear: both;
         }
         @media screen and (max-width: 800px){
@@ -126,13 +139,13 @@
                     </label>
                 </div>
                 <label>Lunch options:</label>
-                    <label for="Chicken" class="left">
-                        <input type="radio" name="lunch">Chicken
+                    <label for="sandwich" class="left">
+                        <input type="radio" name="lunch">Sandwich
                     </label>
-                    <label for="Pork" class="left">
-                        <input type="radio" name="lunch">Pork
+                    <label for="soup" class="left">
+                        <input type="radio" name="lunch">Soup
                     </label>
-                    <label for="Vegetarian">
+                    <label for="vegetarian">
                         <input type="radio" name="lunch">Vegetarian
                     </label>
                 </div>
@@ -161,14 +174,13 @@
             </form>
             </section>
             <section class="grid-box-2">
-                <h2>About</h2>
-                <p>Developer Con
-                </p>
-                <h2>Find Us</h2>
-                <ul>
-                    <li><a href="https://maps.google.com">Map</a>
-                    </li>
-                </ul>
+                <h2 class="center">Contact & Location</h2>
+                <h3 class="no-space">Address</h3>
+                    <p class="no-space"><a href="www.apple.com">123456 Main</a></p>
+                <h3 class="no-space">Phone</h3>
+                    <p class="no-space"><a href="www.microsoft.com">602-555-4321</a></p>
+                <h3 class="no-space">Website</h3>
+                    <p class="no-space"><a href="www.netflix.com">Netflix</a></p>
             </section>
         </article>
         <footer>
