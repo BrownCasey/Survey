@@ -65,6 +65,11 @@
             display: grid;
             grid-template-columns: 2fr 1fr
         }
+        .respImg {
+            max-width: 75%;
+            height: auto;
+            display: block;
+        }
         .input-container {<!--
             border: 1px solid rgb(200, 200, 200);
             border-radius: 10px;-->
@@ -85,12 +90,16 @@
         .right:after {
             clear: both;
         }
+        .shadow {
+            box-shadow: 3px 3px 3px 1px rgb(100, 100, 100, 0.5);
+        }
+        <!--
         @media screen and (max-width: 800px){
             header, section {
                 margin-left: 10%;
                 margin-right: 10%;
             }
-        }
+        } this is not helping right now-->
         </style>
     </head>
     <body>
@@ -185,6 +194,11 @@
                     <p class="no-space"><a href="www.microsoft.com">602-555-4321</a></p>
                 <h3 class="no-space">Website</h3>
                     <p class="no-space"><a href="www.netflix.com">Netflix</a></p>
+                <div>
+                    <a href="https://www.google.com/maps/@33.4881613,-111.951849,13z">
+                        <img class="shadow respImg" src="images/map.jpg"/>
+                    </a>
+                </div>
             </section>
         </article>
         <footer>
