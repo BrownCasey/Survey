@@ -70,10 +70,11 @@
             height: auto;
             display: block;
         }
-        .input-container {<!--
+        .input-container {
+            margin: 3px 0px 15px 0px;
+            <!--
             border: 1px solid rgb(200, 200, 200);
             border-radius: 10px;-->
-            margin: 3px 0px 5px 0px;
         }
         .left {
             float: left;
@@ -125,18 +126,6 @@
                     <input type="number" id="memberId"></input>
                 </div>
                 <div class="input-container">
-                    <label for="Worked">Hours Worked per week:</label>
-                    <input type="number" id="Worked"></input>
-                </div>
-                <div class="input-container">
-                    <label for="activity">Hours Active per week:</label>
-                    <input type="number" id="activity"></input>
-                </div>
-                <div class="input-container">
-                    <label for="sleep">Hours Slept per day:</label>
-                    <input type="number" id="sleep"></input>
-                </div>
-                <div class="input-container">
                 <label>Registration Type:</label>
                     <label for="Speaker" class="left">
                         <input type="radio" name="registration">Speaker
@@ -151,6 +140,7 @@
                         <input type="radio" name="registration">Non-Member
                     </label>
                 </div>
+                <div class="input-container">
                 <label>Lunch options:</label>
                     <label for="sandwich" class="left">
                         <input type="radio" name="lunch">Sandwich
