@@ -106,6 +106,27 @@
         .shadow {
             box-shadow: 3px 3px 3px 1px rgb(100, 100, 100, 0.5);
         }
+        @media screen and (max-width: 1000px){
+            .grid-container2 {
+            display: block;
+            }            
+            .respImg {
+                max-width: 95%;
+                height: auto;
+                display: block;
+            }
+        }
+        @media screen and (max-width: 650px){            
+            .grid-container {
+                display: block;
+            }
+            .respImg {
+                max-width: 75%;
+                margin: auto;
+                display: block;
+            }            
+        }
+        
         /* this is not helping right now
         @media screen and (max-width: 800px){
             header, section {
