@@ -34,6 +34,9 @@
             min-height: 300px;
             background-size: 100%;
         }
+        header h1, header h2 {
+            margin: 0;
+        }
         header, article {
             margin-left: 10%;
             margin-right: 10%;
@@ -121,25 +124,26 @@
     </head>
     <body>
         <header>
-            <h1>Northeast Valley Developers' Conference</h1>
+            <h1 id="title">Northeast Valley Developers' Conference</h1>
             <h2>January 29th, 2019</h2>
             <h2>Exception Canyon Resort</h2>
+            <p id="description">Join us for a full day of topics from design to development.</p>
         </header>
         <article class="grid-container">
             <section class="grid-box-1">
             <h2>Registration</h2>
-            <form action="confirm.html" class="grid-container2">
+            <form action="confirm.html" class="grid-container2" id="survey-form">
                 <div class="input-container">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name"></input>
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" placeholder="Your name"></input>
                 </div>
                 <div class="input-container">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email"></input>
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" required placeholder="Walt@Disney.com"></input>
                 </div>
                 <div class="input-container">
-                    <label for="memberId">Member Id:</label>
-                    <input type="number" id="memberId"></input>
+                    <label for="number" id="number-label">Member Id:</label>
+                    <input type="number" id="number" required min="100" max="99999" placeholder="55555"></input>
                 </div>
                 <div class="input-container">
                 <label>Registration Type:</label>
@@ -210,4 +214,5 @@
         <footer>
         </footer>
     </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
