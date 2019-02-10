@@ -17,8 +17,8 @@
             border: 1px solid rgb(0, 200, 200);
             border-radius: 5px;
             box-shadow: 3px 3px 3px 1px rgb(100, 100, 100, 0.5);
-            color: rgb(240, 240, 240);
-            font-size: 16px;
+            color: rgb(255, 255, 255);
+            font-size: 1.5em;
             margin-top: 15px;
             padding: 10px 20px;
             width: 120px;
@@ -41,7 +41,7 @@
             margin-left: 10%;
             margin-right: 10%;
         }
-        input[type="text"], input[type="email"], input[type="number"]{
+        input[type="text"], input[type="email"], input[type="number"] {
             width: 250px;
             height: 2em;
         }
@@ -127,7 +127,7 @@
             <h1 id="title">Northeast Valley Developers' Conference</h1>
             <h2>January 29th, 2019</h2>
             <h2>Exception Canyon Resort</h2>
-            <p id="description">Join us for a full day of topics from design to development.</p>
+            <p id="description">We develop applications and new opportunities.</p>
         </header>
         <article class="grid-container">
             <section class="grid-box-1">
@@ -135,7 +135,7 @@
             <form action="confirm.html" class="grid-container2" id="survey-form">
                 <div class="input-container">
                     <label for="name" id="name-label">Name:</label>
-                    <input type="text" id="name" placeholder="Your name"></input>
+                    <input type="text" id="name" placeholder="Your name" required></input>
                 </div>
                 <div class="input-container">
                     <label for="email" id="email-label">Email:</label>
@@ -146,54 +146,54 @@
                     <input type="number" id="number" required min="100" max="99999" placeholder="55555"></input>
                 </div>
                 <div class="input-container">
-                <label>Registration Type:</label>
-                    <label for="Speaker" class="left">
-                        <input type="radio" name="registration">Speaker
-                    </label>
-                    <label for="Sponsor" class="left">
-                        <input type="radio" name="registration">Sponsor
-                    </label>
-                    <label for="Member">
-                        <input type="radio" name="registration">Member
-                    </label>
-                    <label for="nonMember">
-                        <input type="radio" name="registration">Non-Member
-                    </label>
+                    <label for="comments" id="comments-label">Comments:</label>
+                    <textarea id="comments" ></textarea>
                 </div>
                 <div class="input-container">
                 <label>Lunch options:</label>
-                    <label for="sandwich" class="left">
-                        <input type="radio" name="lunch">Sandwich
-                    </label>
-                    <label for="soup" class="left">
-                        <input type="radio" name="lunch">Soup
-                    </label>
-                    <label for="vegetarian">
-                        <input type="radio" name="lunch">Vegetarian
+                    <select id="dropdown">
+                        <option value="Sandwich">Sandwich
+                        <option value="Soup">Soup
+                        <option value="Vegetarian">Vegetarian
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label>Registration Type:</label>
+                        <label for="Speaker" class="left">
+                            <input type="radio" name="registration" value="Speaker">Speaker
+                        </label>
+                        <label for="Sponsor" class="left">
+                            <input type="radio" name="registration" value="Sponsor">Sponsor
+                        </label>
+                        <label for="Member">
+                            <input type="radio" name="registration" value="Member">Member
+                        </label>
+                        <label for="nonMember">
+                            <input type="radio" name="registration" value="Non-Member">Non-Member
                     </label>
                 </div>
                 <div class="input-container">
                 <label>Which sessions do you plan to attend?</label>
                     <label for="cloud" class="left">
-                        <input type="checkbox" name="session">Cloud Migration
+                        <input type="checkbox" name="session" value="Cloud Migration">Cloud Migration
                     </label>                         
                     <label for="dataQuality" class="left"> 
-                        <input type="checkbox" name="session">Data Quality
+                        <input type="checkbox" name="session" value="Data Quality">Data Quality
                     </label>                         
                     <label for="frontendDev">              
-                        <input type="checkbox" name="session">Front-end Development
+                        <input type="checkbox" name="session" value="Front-end Development">Front-end Development
                     </label>                         
                     <label for="python" class="left"> 
-                        <input type="checkbox" name="session">Python
+                        <input type="checkbox" name="session" value="Python">Python
                     </label>                         
                     <label for="queryTuning" class="left"> 
-                        <input type="checkbox" name="session">Query Tuning
+                        <input type="checkbox" name="session" value="User Interface">User Interface
                     </label>                         
                     <label for="chill">              
-                        <input type="checkbox" name="session">Unit Testing
+                        <input type="checkbox" name="session" value="Unit Testing">Unit Testing
                     </label>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </form>
             </section>
             <section class="grid-box-2">
