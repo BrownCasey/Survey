@@ -66,6 +66,10 @@ section:nth-child(1n) {
     display: grid;
     grid-template-columns: 1fr 1fr
 }
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
 .respImg {
     max-width: 75%;
     height: auto;
